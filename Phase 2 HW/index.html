@@ -5,43 +5,50 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Teko:400,300' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300italic' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
 	<header>
-		<img src="img/logo.gif" alt="SAGE Logo">
-		<nav>
-			<ul>
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Get in Touch</a></li>
-			</ul>
-		</nav>
+		<div class="headerbar">
+			<img src="img/logo.gif" alt="SAGE Logo" id="toplogo">
+			<div class="topnav">
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#" id="projects">Projects</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Get in Touch</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 	</header>
 
 	<main>
-		<section>
-			<ul>
+		<section class="hero">
+			<ul class="heroitems">
 				<li class="active">
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
 					<a href="#" class="button" target="_blank">Explore More</a>
 				</li>
-				<li>
+				<li class="hidden">
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
 					<a href="#" class="button" target="_blank">Explore More</a>
 				</li>
-				<li>
+				<li class="hidden">
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
 					<a href="#" class="button" target="_blank">Explore More</a>
 				</li>
-				<li>
+				<li class="hidden">
 					<h1>We build websites and apps that people love</h1>
 					<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
 					<a href="#" class="button" target="_blank">Explore More</a>
@@ -50,108 +57,115 @@
 
 			<nav>
 				<ul>
-					<li class="active"></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<div class="blocknav"><li></li></div>
+					<div class="blocknav" id="activeblock"><li></li></div>
+					<div class="blocknav"><li></li></div>
+					<div class="blocknav"><li></li></div>
 				</ul>
 			</nav>
 		</section>
 
-		<section>
+		<section class="gallery">
 			<h2>My Projects</h2>
 			
+			<div class="galitem">
 			<article>
-				<a href="#" target="_blank">
 				<figure>
+				<a href="#" target="_blank">
 					<img src="img/gal1.jpg" alt="Gallery Item 1">
 					<figcaption>
-						<h3>Year 2014</h3>
+						<time>Year 2014</time>
 						<h3>Client: Personal Project</h3>
 						<h4>Digital / Mobile / Editorial</h4>
 					</figcaption>
-				</figure>
-					<h3>Model S Catalog</h3>
-					<p>Information materials that will help to discover all features of the serial electric car Tesla Model S</p>
 				</a>
+			</figure>
+					<h3><a href="#" target="_blank">Model S Catalog</a></h3>
+					<p>Information materials that will help to discover all features of the serial electric car Tesla Model S</p>
 			</article>
+			</div>
 
+			<div class="galitem">
 			<article>
-				<a href="#" target="_blank">
 				<figure>
+				<a href="#" target="_blank">
 					<img src="img/gal2.jpg" alt="Gallery Item 2">
 					<figcaption>
-						<h3>Year 2014</h3>
+						<time>Year 2014</time>
 						<h3>Client: Personal Project</h3>
 						<h4>Digital / Mobile / Editorial</h4>
 					</figcaption>
+				</a>
 				</figure>
-					<h3>Discovery Channel iPad</h3>
+					<h3><a href="#">Discovery Channel iPad</a></h3>
 					<p>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</p>
 				</a>
 			</article>
+			</div>
 
+			<div class="galitem">
 			<article>
-				<a href="#" target="_blank">
 				<figure>
+				<a href="#" target="_blank">
 					<img src="img/gal3.jpg" alt="Gallery Item 3">
 					<figcaption>
-						<h3>Year 2014</h3>
+						<time>Year 2014</time>
 						<h3>Client: Personal Project</h3>
 						<h4>Digital / Mobile / Editorial</h4>
 					</figcaption>
-				</figure>
-					<h3>Stuhrling</h3>
-					<p>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</p>
 				</a>
+				</figure>
+					<h3><a href="">Stuhrling</a></h3>
+					<p>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</p>
 			</article>
+			</div>
 			
+			<div class="galitem">
 			<article>
-				<a href="#" target="_blank">
 				<figure>
-					<img src="img/gal4.jpg" alt="Gallery Item 4">
+				<a href="#" target="_blank">
+					<img src="img/gal4.jpg" alt="Gallery Item 4" class="galimg">
 					<figcaption>
-						<h3>Year 2014</h3>
+						<time>Year 2014</time>
 						<h3>Client: Personal Project</h3>
 						<h4>Digital / Mobile / Editorial</h4>
 					</figcaption>
+				</a>
 				</figure>
-					<h3>Infinity Spaces</h3>
+					<h3><a href="#">Infinity Spaces</a></h3>
 					<p>Infinity ∞ is an abstract concept describing something without any limit and is relevant in a number of fields</p>
 				</a>
 			</article>
-	
-			<a href="#">Show more projects</a>
+			</div>
+
+			<a href="#" class="show">Show more projects</a>
+		
 		</section>
 		
-		<aside>
+		<div class="showcase"><section>
 			<h3>Showcasing your work has never been more fun</h3>
 			<p>Discover elegant solution for your online portfolio. Fast, reliable, affordable...</p>
 			<a href="#">Get in touch</a>
-		</aside>
+		</section>
+		</div>
 
+			<div class="connected">
+				<aside>
+					<h3>Stay connected</h3>
+					<p>Join us on our social networks for all the latest updates, product/service announcements and many more</p>
+					<ul>
+						<li><a href="#" target="_blank"><i class="fa fa-behance"></i>Behance</a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-facebook"></i>Facebook</a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i>Pinterest</a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+					</ul>
+				</aside>
+			</div>
 		<footer>
-
-		<aside>
-			<h3>Stay connected</h3>
-			<p>Join us on our social networks for all the latest updates, product/service announcements and many more</p>
-			<ul>
-				<li><a href="#" target="_blank"><i class="fa fa-behance"></i>Behance</a></li>
-				<li><a href="#" target="_blank"><i class="fa fa-facebook-official"></i>Facebook</a></li>
-				<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i>Pinterest</a></li>
-				<li><a href="#" target="_blank"><i class="fa fa-linkedin-square"></i>LinkedIn</a></li>
-			</ul>
-		</aside>
-
-			<small>Copyright © 2015 SAGE Agency Worldwide. All rights reserved.</small>
+				<small>Copyright © 2015 SAGE Agency Worldwide. All rights reserved.</small>
 		</footer>
 	</main>
 
 </body>
 </html>
-
-
-
-
-
 

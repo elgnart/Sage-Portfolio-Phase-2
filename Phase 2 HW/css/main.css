@@ -152,9 +152,19 @@ figcaption{
 	left: 20px;
 }
 
-.galitem figure:hover figcaption{
+figcaption h4{
+	font-size: 18px;
+	letter-spacing: 2px;
+
+}
+
+figure:hover figcaption{
 	display: block;
-	}
+}
+
+.galitem:hover h3 a{
+	color: #f63c3c;
+}
 
 .gallery{
 	margin: 0 auto;
@@ -211,6 +221,11 @@ figcaption{
 	text-decoration: none;
 }
 
+.galitem h4{
+	font-size: 18px;
+	letter-spacing: 3px;
+}
+
 .galitem h3 a{
 	text-decoration: none;
 }
@@ -229,15 +244,18 @@ figcaption{
 }
 
 .show{
-	display: block;
-}
-
-.show {
+	display: inline-block;
 	color: #f63c3c;
 	font-size: 20px;
 	margin: 40px;
+	text-decoration: none;
+	border-bottom: solid 5px #f63c3c;
+    padding-bottom: 16px;
+    width: 180px;
+    color:#f63c3c;
+    text-align: center;
+    letter-spacing: 3px;
 }
-
 
 
 /*SHOWCASE SECTION*/
@@ -246,6 +264,7 @@ figcaption{
 	text-align: center;
 	padding: 120px 0;
 	margin-top: 25px;
+	letter-spacing: 3px;
 }
 
 .showcase h3{
@@ -254,7 +273,6 @@ figcaption{
 	font-weight: lighter;
 	position: relative;
 	bottom: 50px;
-	letter-spacing: 2px;
 }
 
 .showcase p{
@@ -262,7 +280,7 @@ figcaption{
 	font-weight: lighter;
 	position: relative;
 	bottom: 20px;
-	letter-spacing: 2px;
+	font-size: 16px;
 }
 
 .showcase a{
@@ -271,6 +289,8 @@ figcaption{
 	background-color: #ffffff;
 	position: relative;
 	top: 45px;
+	text-decoration: none;
+	letter-spacing: 4px;
 }
 
 /*STAY CONNECTED SECTION*/
@@ -285,11 +305,14 @@ figcaption{
 .connected h3{
 	font-size: 40px;
 	margin-bottom: 30px;
+	letter-spacing: 3px;
 }
 
 .connected p{
 	font-size: 16px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
+	font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+
 }
 .connected ul{
 	text-align: left;
@@ -316,10 +339,11 @@ figcaption{
 	display: block;
 	line-height: 50px;
 	font-size: 40px;
+	text-align: center;
 }
 
 aside{
-	margin-left: 25%;
+	margin-left: 20%;
 	padding-bottom: 65px;
 }
 
@@ -332,7 +356,7 @@ footer{
 }
 
 small{
-	margin-left: 25%;
+	margin-left: 20%;
 }
 
 

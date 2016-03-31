@@ -409,9 +409,7 @@ small{
 
 
 @media screen and (max-width: 730px) {
-	    body{
-   		 background-color: green;
-   		}
+	    
 
    		 .blocknav{
    		 	display: none;
@@ -432,13 +430,17 @@ small{
 			color: #fafafa;
    		}
 
-		.connected ul li a{
+		/*.connected ul li a{
+			display: none;
+		}*/
+
+		.connected span{
 			display: none;
 		}
 
-		.link a{
+		/*.link {
 			display: none;
-		}
+		}*/
 }
 
 
